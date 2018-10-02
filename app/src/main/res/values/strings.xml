@@ -1,0 +1,54 @@
+<resources>
+
+    <string name="app_name">Knox SDK Sample</string>
+    <string name="enterprise_device_admin">Knox SDK Sample</string>
+    <string name="enterprise_device_admin_description">DeviceAdmin class</string>
+    <string name="activate_admin">Activate Admin</string>
+    <string name="deactivate_admin">Deactivate Admin</string>
+    <string name="activate_license">Activate license</string>
+    <string name="grant_permissions">Grant Permissions</string>
+    <string name="change_bootlogo">Change Boot Logo</string>
+
+    <!-- UI elements -->
+    <string name="license_progress">Activating license...</string>
+    <string name="license_deactivation">Deactivating license...</string>
+    <string name="permissions_failed">Failed to grant runtime permissions %1$s to package</string>
+    <string name="permissions_granted">Granted runtime permissions %1$s to package</string>
+    <string name="admin_cancelled">Device admin activation cancelled</string>
+    <string name="admin_activated">Device administrator activated</string>
+    <string name="activating_admin">Activating device administrator...</string>
+    <string name="deactivating_admin">Deactivating device administrator... </string>
+    <string name="camera_state">Camera is enabled: %1$b</string>
+    <string name="permission">com.samsung.android.knox.permission.KNOX_HW_CONTROL</string>
+
+    <!-- License activation messages -->
+    <string name="no_intent">License activation intent is not available</string>
+    <string name="no_intent_action">License activation intent action is not available</string>
+    <string name="klm_action_successful">Action successful</string>
+
+    <!-- KPE License Error Codes -->
+    <string name="err_klm_internal">KnoxLicenseManager: Internal error</string>
+    <string name="err_klm_internal_server">KnoxLicenseManager: Internal server error</string>
+    <string name="err_klm_licence_invalid_license">KnoxLicenseManager: Invalid license</string>
+    <string name="err_klm_invalid_package_name">KnoxLicenseManager: Invalid package name</string>
+    <string name="err_klm_licence_terminated">KnoxLicenseManager: License terminated</string>
+    <string name="err_klm_network_disconnected">KnoxLicenseManager: Network disconnected</string>
+    <string name="err_klm_network_general">KnoxLicenseManager: Network general error</string>
+    <string name="err_klm_unknown">KnoxLicenseManager: Error unknown</string>
+    <string name="err_klm_code_unknown">KnoxLicenseManager: Error code unknown %1$s, status %2$s</string>
+    <string name="err_klm_not_current_date">KnoxLicenseManager: Not current date</string>
+    <string name="err_klm_sig_mismatch">KnoxLicenseManager: Caller package signature mismatch</string>
+    <string name="err_klm_ver_code_mismatch">KnoxLicenseManager: Caller package version code mismatch</string>
+    <string name="err_klm_null_params">KnoxLicenseManager: NULL params</string>
+    <string name="err_klm_user_disagrees_license_agreement">KLM: User disagrees EULA</string>
+
+    <!-- API level -->
+    <string name="api_level_message">This device does not support the new Knox SDK and Samsung
+        Knox Licence (SKL)
+        licensing scheme. API level %1$d detected.
+        Requires
+        level %2$d
+        .</string>
+    <string name="api_level_notice">App Requirement</string>
+
+</resources>

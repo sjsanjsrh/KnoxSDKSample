@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.samsung.knox.example.knoxsdk.MainActivity">
+
+    <TextView
+        android:id="@+id/logview_id"
+        android:gravity="bottom"
+        android:layout_width="320dp"
+        android:layout_height="230dp"
+        android:textColor="#3F51B5"
+        android:background="@drawable/background"
+        android:scrollbars="vertical"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/logview_id"
+
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/ToggleAdmin"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/activate_admin"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/ActivateLicencebtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ToggleAdmin"
+                android:layout_below="@+id/ToggleAdmin"
+                android:text="@string/activate_license" />
+
+            <Button
+                android:id="@+id/DeactivateLicensebtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ActivateLicencebtn"
+                android:layout_centerHorizontal="true"
+                android:text="Deactivate license" />
+
+            <Button
+                android:id="@+id/ChangeBootlogobtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DeactivateLicensebtn"
+                android:layout_centerHorizontal="true"
+                android:text="@string/change_bootlogo" />
+
+            <EditText
+                android:id="@+id/soundDelayEdit"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ChangeBootlogobtn"
+                android:layout_centerHorizontal="true"
+                android:inputType="number"
+                android:hint="soundDelay [ms]" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
